@@ -199,4 +199,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
   }
+
+  .overview-imgs img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
 }
