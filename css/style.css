@@ -44,7 +44,7 @@
 }
 
 .container {
-  background-image: url("../public/hero.png");
+  background-image: url("../public/hero.webp");
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -116,6 +116,59 @@
   gap: 1.5rem;
   grid-template-columns:  repeat(4, 1fr);;
     grid-template-rows: repeat(2, auto);
+}
+
+.overview-imgs img {
+  object-fit: cover;
+}
+
+.feature-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 8rem;
+}
+
+.feature-overview-msgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.feature-overview-title {
+  font-size: xx-large;
+  background: linear-gradient(to right, #e88c8c, #ea4fdf);
+  color: transparent;
+  background-clip: text;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.feature-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-item img {
+  object-fit: cover;
+  width: 300px;
+  height: auto;
+}
+
+.feature-num {
+  font-size: x-large;
+  font-weight: lighter;
+}
+
+.feature-title {
+  font-weight: 600;
+}
+
+.feature-desc {
+  font-size: .75rem;
 }
 
 @media (max-width: 480px) {
