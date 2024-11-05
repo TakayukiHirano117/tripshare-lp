@@ -116,6 +116,7 @@
   grid-template-rows: repeat(2, auto);
 }
 
+/* 引き延ばしを抑える */
 .overview-imgs img {
   object-fit: cover;
 }
