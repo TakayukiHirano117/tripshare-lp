@@ -57,8 +57,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-items {
@@ -114,8 +112,13 @@
   /* スマホは2列4行, paddingも2rem, 1remくらい, 画像サイズも抑える */
   display: grid;
   gap: 1.5rem;
-  grid-template-columns:  repeat(4, 1fr);;
-    grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+/* 引き延ばしを抑える */
+.overview-imgs img {
+  object-fit: cover;
 }
 
 .overview-imgs img {
@@ -216,7 +219,13 @@
     /* スマホは2列4行, paddingも2rem, 1remくらい, 画像サイズも抑える */
     display: grid;
     gap: 1rem;
-    grid-template-columns:  repeat(2, 1fr);;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
+  }
+
+  .overview-imgs img {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 1 / 1;
   }
 }
