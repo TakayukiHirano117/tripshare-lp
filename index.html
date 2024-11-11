@@ -6,6 +6,16 @@
     <title>TripShare</title>
     <link rel="stylesheet" href="css/destyle.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/1d8e0db496.js"
@@ -13,34 +23,38 @@
     ></script>
   </head>
   <body>
-    <section class="container">
-      <header class="header">
-        <div class="header-top">
-          <a href="#"><img src="./public/logo_icon.webp" alt="ロゴ" /></a>
-          <h1 class="header-title">TripShare</h1>
+    <header class="header">
+      <div class="header-top">
+        <a href="#"
+          ><img src="./public/logo_icon.webp" alt="ロゴ" class="header-icon"
+        /></a>
+        <h1 class="header-title">TripShare</h1>
+      </div>
+      <div class="header-nav">
+        <div class="nav-icon">
+          <i class="fas fa-bars" onclick="toggleMenu()"></i>
         </div>
-        <div class="header-nav">
+        <div class="nav-menu">
           <div class="nav-icon">
-            <i class="fas fa-bars" onclick="toggleMenu()"></i>
+            <i class="fas fa-x fa-xl" onclick="toggleMenu()"></i>
           </div>
-          <div class="nav-menu">
-            <div class="nav-icon">
-              <i class="fas fa-x fa-xl" onclick="toggleMenu()"></i>
-            </div>
-            <div><a href="#functions">機能</a></div>
-            <div><a href="#reviews">利用者の声</a></div>
-            <div><a href="#inquiry">お問い合わせ</a></div>
-            <div class="start-to-record">
-              <a href="#start-to-record">旅の記録を開始する</a>
-            </div>
+          <div class="nav-menu-item"><a href="#functions">機能</a></div>
+          <div class="nav-menu-item"><a href="#reviews">利用者の声</a></div>
+          <div class="nav-menu-item"><a href="#inquiry">お問い合わせ</a></div>
+          <div class="start-to-record nav-menu-item">
+            <a href="#start-to-record">旅の記録を開始する</a>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+    <section class="hero-container">
       <div class="hero">
         <div class="hero-items">
           <div class="hero-msgs">
             <h2 class="hero-title">世界をシェアしよう</h2>
-            <p>あなたの冒険が、誰かのインスピレーションに。</p>
+            <p class="hero-desc">
+              あなたの冒険が、誰かのインスピレーションに。
+            </p>
           </div>
           <div class="start-to-record">
             <a href="#start-to-record">旅の記録を開始する</a>
@@ -112,18 +126,82 @@
         />
       </div>
     </div>
+    <!-- モバイルのHTMLとPCのHTMLを2種類作成 -->
     <div class="feature-overview">
       <div class="feature-overview-msgs">
         <h2 class="feature-overview-title">Features</h2>
-        <p>充実の機能で、思い出をもっと特別に</p>
+        <p class="feature-overview-desc">
+          充実の機能で、思い出をもっと特別に。
+        </p>
       </div>
       <div class="feature-item">
         <div class="feature-msgs">
-          <h2 class="feature-title">Feature1</h2>
-          <p>高品質な写真編集機能</p>
-          <p>プロ仕様のフィルターと編集ツールで、写真をさらに美しく。</p>
+          <h2 class="feature-num">Feature1</h2>
+          <p class="feature-title">高品質な写真編集機能</p>
+          <p class="feature-desc">
+            プロ仕様のフィルターと編集ツールで、写真をさらに美しく。
+          </p>
         </div>
         <img src="./public/feature_1.webp" alt="" />
+      </div>
+      <div class="feature-item">
+        <div class="feature-msgs">
+          <h2 class="feature-num">Feature2</h2>
+          <p class="feature-title">リアルタイムの位置情報シェア</p>
+          <p class="feature-desc">
+            旅の途中で現在地を簡単に共有し、友達にリアルタイムで旅の進行をお知らせ。
+          </p>
+        </div>
+        <img src="./public/feature_2.webp" alt="" />
+      </div>
+      <div class="feature-item">
+        <div class="feature-msgs">
+          <h2 class="feature-num">Feature3</h2>
+          <p class="feature-title">コメントといいね！</p>
+          <p class="feature-desc">
+            フォロワーからのコメントや「いいね！」で、旅の感動を一緒に楽しむ。
+          </p>
+        </div>
+        <img src="./public/feature_3.webp" alt="" />
+      </div>
+    </div>
+    <!-- モバイル用機能概要HTML -->
+    <div class="feature-overview-mobile">
+      <div class="feature-overview-msgs-mobile">
+        <h2 class="feature-overview-title">Features</h2>
+        <p class="feature-overview-desc">
+          充実の機能で、思い出をもっと特別に。
+        </p>
+      </div>
+      <div class="feature-item-mobile">
+        <div class="feature-msgs">
+          <h2 class="feature-num">Feature1</h2>
+          <p class="feature-title-mobile">高品質な写真編集機能</p>
+          <p class="feature-desc-mobile">
+            プロ仕様のフィルターと編集ツールで、写真をさらに美しく。
+          </p>
+        </div>
+        <img src="./public/feature_1.webp" alt="" />
+      </div>
+      <div class="feature-item-mobile">
+        <div class="feature-msgs">
+          <h2 class="feature-num">Feature2</h2>
+          <p class="feature-title-mobile">リアルタイムの位置情報シェア</p>
+          <p class="feature-desc-mobile">
+            旅の途中で現在地を簡単に共有し、友達にリアルタイムで旅の進行をお知らせ。
+          </p>
+        </div>
+        <img src="./public/feature_2.webp" alt="" />
+      </div>
+      <div class="feature-item-mobile">
+        <div class="feature-msgs">
+          <h2 class="feature-num">Feature3</h2>
+          <p class="feature-title-mobile">コメントといいね！</p>
+          <p class="feature-desc-mobile">
+            フォロワーからのコメントや「いいね！」で、旅の感動を一緒に楽しむ。
+          </p>
+        </div>
+        <img src="./public/feature_3.webp" alt="" />
       </div>
     </div>
   </body>

@@ -5,6 +5,7 @@
   top: 0;
   align-items: center;
   padding: 1rem 2rem;
+  height: 70px;
 }
 
 .header-top {
@@ -12,8 +13,16 @@
   align-items: center;
 }
 
+.header-icon {
+  aspect-ratio: 1 / 1;
+}
+
 .header-title {
   margin-left: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1c1c1c;
 }
 
 .header-nav {
@@ -26,6 +35,13 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.nav-menu-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #1c1c1c;
+  font-size: 0.875rem;
 }
 
 .nav-icon {
@@ -43,12 +59,14 @@
   color: white;
 }
 
-.container {
-  background-image: url("../public/hero.png");
+.hero-container {
+  background-image: url("../public/hero.webp");
   background-size: cover;
+  background-position-y: 30%;
+  /* background-position: center; */
   height: 100vh;
   background-repeat: no-repeat;
-  background-position-y: 30%;
+  margin-top: -70px;
 }
 
 .hero {
@@ -83,9 +101,17 @@
 }
 
 .hero-title {
-  font-weight: bold;
-  font-size: xx-large;
+  font-weight: 700;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.hero-desc {
+  font-size: 1.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  margin-top: 0.5rem;
 }
 
 .overview {
@@ -99,12 +125,19 @@
 }
 
 .overview-title {
-  font-size: x-large;
+  font-size: 2.25rem;
   margin-bottom: 3rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .overview-msgs {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  font-size: 1.25rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  color: #e4e4e4;
 }
 
 .overview-imgs {
@@ -119,6 +152,130 @@
 /* 引き延ばしを抑える */
 .overview-imgs img {
   object-fit: cover;
+}
+
+.feature-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.feature-overview-msgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.feature-overview-title {
+  font-size: 2rem;
+  font-family: "Noto Sans JP", sans-serif;
+  background: linear-gradient(to right, #fe883d, #fb3596, #eb00fa);
+  color: transparent;
+  background-clip: text;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.feature-overview-desc {
+  color: #5d5d5d;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.feature-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.feature-item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.feature-item img {
+  object-fit: cover;
+  width: 400px;
+  height: 380px;
+  height: auto;
+}
+
+.feature-item-mobile img {
+  object-fit: cover;
+}
+
+.feature-num {
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #5d5d5d;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.feature-num::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* テキストの下に配置 */
+  width: 40px; /* 下線の長さを設定 */
+  height: 1px; /* 下線の太さを設定 */
+  background-color: #5d5d5d; /* 下線の色を設定 */
+}
+
+.feature-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1c1c1c;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.feature-desc {
+  color: #5d5d5d;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+}
+
+.feature-overview-mobile {
+  display: none;
+  margin: 2rem 1rem;
+}
+
+.feature-overview-msgs-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-item-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.feature-title-mobile {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #1c1c1c;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.feature-desc-mobile {
+  color: #5d5d5d;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 480px) {
@@ -157,8 +314,20 @@
     border-radius: 2rem;
   }
 
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
   .overview {
     padding: 2rem 1rem;
+  }
+
+  .overview-title {
+    font-size: 1.25rem;
   }
 
   .overview-imgs {
@@ -175,4 +344,18 @@
     width: 100%;
     aspect-ratio: 1 / 1;
   }
+
+  .feature-overview {
+    padding: 2rem 1rem;
+    display: none;
+  }
+
+  .feature-overview-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 }
