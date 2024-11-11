@@ -5,6 +5,7 @@
   top: 0;
   align-items: center;
   padding: 1rem 2rem;
+  height: 70px;
 }
 
 .header-top {
@@ -58,12 +59,14 @@
   color: white;
 }
 
-.container {
+.hero-container {
   background-image: url("../public/hero.webp");
   background-size: cover;
+  background-position-y: 30%;
+  /* background-position: center; */
   height: 100vh;
   background-repeat: no-repeat;
-  background-position-y: 30%;
+  margin-top: -70px;
 }
 
 .hero {
@@ -156,7 +159,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 8rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 .feature-overview-msgs {
