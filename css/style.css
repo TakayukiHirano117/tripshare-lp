@@ -278,9 +278,15 @@
   margin-bottom: 2rem;
 }
 
+/* ユーザーの声 */
 .user-voices {
-  padding: 4rem 0;
-  background: #F4F4F4;
+  padding: 4rem;
+}
+
+.user-voices-container {
+  margin: 4rem 0;
+  padding: 4rem;
+  background: #f4f4f4;
   max-width: 1080px;
   height: 775px;
   border-radius: 1rem;
@@ -295,7 +301,7 @@
   margin-bottom: 4rem;
 }
 
-.user-voices-title  {
+.user-voices-title {
   font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
   background: linear-gradient(to right, #fe883d, #fb3596, #eb00fa);
@@ -312,10 +318,9 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.user-voices-container {
+.user-voice-card-container {
   display: flex;
   gap: 2rem;
-  margin: 4rem 0;
   overflow-x: auto;
 }
 
@@ -350,25 +355,27 @@
 }
 
 .user-profile {
-  color: #5D5D5D;
+  color: #5d5d5d;
 }
 
 .user-voice {
-  color: #1C1C1C;
+  color: #1c1c1c;
 }
 
 .user-voices-mobile {
   display: none;
+}
+
+.user-voices-container-mobile {
   padding: 4rem 0;
-  background: #F4F4F4;
+  background: #f4f4f4;
   width: 100%;
   margin: 0 auto;
 }
 
-.user-voices-container-mobile {
+.user-voice-card-container-mobile {
   display: flex;
   gap: 2rem;
-  margin: 4rem 0;
   overflow-x: auto;
 }
 
@@ -399,6 +406,14 @@
   padding: 2rem;
   gap: 1rem;
   height: 100%;
+}
+
+.call-to-action {
+  background-image: url("../public/call_action_bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
 }
 
 @media (max-width: 480px) {
