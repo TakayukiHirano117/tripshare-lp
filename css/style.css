@@ -315,7 +315,7 @@
 .user-voices-container {
   display: flex;
   gap: 2rem;
-  margin: 4rem 2rem;
+  margin: 4rem 0;
   overflow-x: auto;
 }
 
@@ -368,7 +368,7 @@
 .user-voices-container-mobile {
   display: flex;
   gap: 2rem;
-  margin: 4rem 2rem;
+  margin: 4rem 0;
   overflow-x: auto;
 }
 
