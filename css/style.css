@@ -278,9 +278,20 @@
   color: #5d5d5d;
   margin-bottom: 2rem;
 }
-
+    /* ユーザーの声 */
 .user-voices {
+  padding: 4rem;
+}
+
+.user-voices-container {
+  margin: 4rem 0;
   padding: 4rem 0;
+  background: #f4f4f4;
+  max-width: 1080px;
+  height: 775px;
+  border-radius: 1rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .user-voices-msgs {
@@ -291,7 +302,7 @@
 }
 
 .user-voices-title {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-family: "Noto Sans JP", sans-serif;
   background: linear-gradient(to right, #fe883d, #fb3596, #eb00fa);
   color: transparent;
@@ -307,22 +318,9 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.user-voices-container {
-  padding: 4rem 0;
-  background: #f4f4f4;
-  max-width: 1080px;
-  height: 775px;
-  border-radius: 1rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .user-voice-card-container {
   display: flex;
   gap: 2rem;
-  width: 972px;
-  margin: 0 auto;
-  /* margin: 4rem 0; */
   overflow-x: auto;
 }
 
@@ -366,16 +364,18 @@
 
 .user-voices-mobile {
   display: none;
-  padding: 4rem 0;
+}
+
+.user-voices-container-mobile {
+  padding: 2rem 0;
   background: #f4f4f4;
   width: 100%;
   margin: 0 auto;
 }
 
-.user-voices-container-mobile {
+.user-voice-card-container-mobile {
   display: flex;
   gap: 2rem;
-  margin: 4rem 0;
   overflow-x: auto;
 }
 
