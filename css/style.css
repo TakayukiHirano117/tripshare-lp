@@ -160,7 +160,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 4rem 0 0;
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
@@ -281,12 +281,6 @@
 
 .user-voices {
   padding: 4rem 0;
-  background: #f4f4f4;
-  max-width: 1080px;
-  height: 775px;
-  border-radius: 1rem;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .user-voices-msgs {
@@ -314,9 +308,21 @@
 }
 
 .user-voices-container {
+  padding: 4rem 0;
+  background: #f4f4f4;
+  max-width: 1080px;
+  height: 775px;
+  border-radius: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.user-voice-card-container {
   display: flex;
   gap: 2rem;
-  margin: 4rem 0;
+  width: 972px;
+  margin: 0 auto;
+  /* margin: 4rem 0; */
   overflow-x: auto;
 }
 
@@ -522,7 +528,7 @@
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  color: #1C1C1C;
+  color: #1c1c1c;
 }
 
 .contact-form-radio-label:after {
@@ -530,7 +536,7 @@
   color: #fc4a81;
   font-size: 1.25rem;
   font-weight: 500;
-  vertical-align: -.3rem;
+  vertical-align: -0.3rem;
 }
 
 .contact-form-radio {
@@ -538,7 +544,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .radio-btns {
@@ -549,7 +555,7 @@
 .contact-form-email {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .contact-form-email-label:after {
@@ -557,13 +563,13 @@
   color: #fc4a81;
   font-size: 1.25rem;
   font-weight: 500;
-  vertical-align: -.3rem;
+  vertical-align: -0.3rem;
 }
 
 .contact-form-body {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .contact label {
@@ -595,7 +601,7 @@
   height: 9px;
   border-radius: 50%;
   background: #000;
-  content: '';
+  content: "";
 }
 
 .contact-mobile input[type="radio"]:checked:before {
@@ -607,7 +613,7 @@
   height: 9px;
   border-radius: 50%;
   background: #000;
-  content: '';
+  content: "";
 }
 
 .contact input {
@@ -681,7 +687,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 .radio-btns-mobile {
@@ -790,6 +796,6 @@
   }
 
   .contact-mobile {
-      display: flex;
+    display: flex;
   }
 }
