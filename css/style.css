@@ -38,7 +38,7 @@
 }
 
 .nav-menu-item {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
   color: #1c1c1c;
   font-size: 0.875rem;
@@ -50,9 +50,10 @@
 }
 
 .start-to-record {
+  font-family: "Noto Sans JP", sans-serif;
   background: white;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .color-white {
@@ -87,7 +88,7 @@
 .hero-items .start-to-record {
   display: inline-block;
   color: black;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 2rem;
 }
 
@@ -401,6 +402,81 @@
   height: 100%;
 }
 
+.call-to-action {
+  background: linear-gradient(rgba(0, 0, 0, .5),  rgba(0, 0, 0, .5)), url("../public/call_action_bg.webp"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 37px;
+  padding: 4rem 0;
+}
+
+.call-to-action .start-to-record {
+  display: inline-block;
+  flex-grow: 0;
+  color: black;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.call-to-action-title {
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.call-to-action-msgs {
+  text-align: center;
+  color: #FCFCFC;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.call-to-action-mobile {
+  display: none;
+  padding: 2rem 1rem;
+  background: linear-gradient(rgba(0, 0, 0, .5),  rgba(0, 0, 0, .5)), url("../public/call_action_bg.webp"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 37px;
+}
+
+.call-to-action-title-mobile {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.call-to-action-msgs-mobile {
+  text-align: center;
+  color: #FCFCFC;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.call-to-action-mobile .start-to-record {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
 @media (max-width: 480px) {
   .nav-menu {
     display: none;
@@ -486,5 +562,13 @@
 
   .user-voices-mobile {
     display: block;
+  }
+
+  .call-to-action {
+    display: none;
+  }
+
+  .call-to-action-mobile {
+    display: flex;
   }
 }
