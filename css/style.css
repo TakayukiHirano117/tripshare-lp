@@ -283,6 +283,11 @@
   padding: 4rem;
 }
 
+.user-voice-card-container-wrapper {
+  display: inline-flex; 
+  padding: 0 2rem;
+}
+
 .user-voices-container {
   margin: 4rem 0;
   padding: 4rem 0;
@@ -292,6 +297,7 @@
   border-radius: 1rem;
   width: 100%;
   margin: 0 auto;
+  overflow-x: auto;
 }
 
 .user-voices-msgs {
@@ -321,8 +327,15 @@
 .user-voice-card-container {
   display: flex;
   gap: 2rem;
-  overflow-x: auto;
+  /* overflow-x: auto; */
 }
+
+/* .user-voice-card-container:first-child {
+  padding-left: 2rem;
+}
+.user-voice-card-container:last-child {
+  margin-right: 2rem;
+} */
 
 .user-voice-card {
   width: 372px;
