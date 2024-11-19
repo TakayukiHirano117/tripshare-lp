@@ -38,9 +38,9 @@
           <div class="nav-icon">
             <i class="fas fa-x fa-xl" onclick="toggleMenu()"></i>
           </div>
-          <div class="nav-menu-item"><a href="#functions">機能</a></div>
-          <div class="nav-menu-item"><a href="#reviews">利用者の声</a></div>
-          <div class="nav-menu-item"><a href="#inquiry">お問い合わせ</a></div>
+          <div class="nav-menu-item"><a href="#features">機能</a></div>
+          <div class="nav-menu-item"><a href="#voices">利用者の声</a></div>
+          <div class="nav-menu-item"><a href="#contact">お問い合わせ</a></div>
           <div class="start-to-record nav-menu-item">
             <a href="#start-to-record">旅の記録を開始する</a>
           </div>
@@ -127,7 +127,7 @@
       </div>
     </div>
     <!-- モバイルのHTMLとPCのHTMLを2種類作成 -->
-    <div class="feature-overview">
+    <div class="feature-overview" id="features">
       <div class="feature-overview-msgs">
         <h2 class="feature-overview-title">Features</h2>
         <p class="feature-overview-desc">
@@ -166,7 +166,7 @@
       </div>
     </div>
     <!-- モバイル用機能概要HTML -->
-    <div class="feature-overview-mobile">
+    <div class="feature-overview-mobile" id="features">
       <div class="feature-overview-msgs-mobile">
         <h2 class="feature-overview-title">Features</h2>
         <p class="feature-overview-desc">
@@ -204,7 +204,7 @@
         <img src="./public/feature_3.webp" alt="" />
       </div>
     </div>
-    <div class="user-voices">
+    <div class="user-voices" id="voices">
       <div class="user-voices-container">
         <div class="user-voices-msgs">
           <h2 class="user-voices-title">Voices</h2>
@@ -248,7 +248,7 @@
       </div>
     </div>
     <!-- モバイル用ユーザーボイス -->
-    <div class="user-voices-mobile">
+    <div class="user-voices-mobile" id="voices">
       <div class="user-voices-container-mobile">
         <div class="user-voices-msgs">
           <h2 class="user-voices-title">Voices</h2>
@@ -316,7 +316,7 @@
       </div>
     </div>
     <!-- コンタクト -->
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="contact-msgs">
         <h2 class="contact-title">Contact</h2>
         <p class="contact-desc">まずはお気軽にご相談ください。</p>
@@ -351,7 +351,7 @@
       </form>
     </div>
     <!-- コンタクトモバイル用 -->
-    <div class="contact-mobile">
+    <div class="contact-mobile" id="contact">
       <div class="contact-msgs">
         <h2 class="contact-title">Contact</h2>
         <p class="contact-desc">まずはお気軽にご相談ください。</p>
@@ -401,13 +401,13 @@
           </div>
         </div>
         <div class="footer-nav">
-          <a href="">
+          <a href="#features">
             <p>機能</p>
           </a>
-          <a href="">
+          <a href="#voices">
             <p>利用者の声</p>
           </a>
-          <a href="">
+          <a href="#contact">
             <p>お問い合わせ</p>
           </a>
         </div>
