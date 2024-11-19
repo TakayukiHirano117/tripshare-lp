@@ -43,7 +43,7 @@ body {
 }
 
 .nav-menu-item {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 500;
   color: #1c1c1c;
   font-size: 0.875rem;
@@ -55,9 +55,10 @@ body {
 }
 
 .start-to-record {
+  font-family: "Noto Sans JP", sans-serif;
   background: white;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .color-white {
@@ -92,7 +93,7 @@ body {
 .hero-items .start-to-record {
   display: inline-block;
   color: black;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border-radius: 2rem;
 }
 
@@ -426,14 +427,6 @@ body {
   height: 100%;
 }
 
-.call-to-action {
-  background-image: url("../public/call_action_bg.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-}
-
 @media (max-width: 480px) {
   .nav-menu {
     display: none;
@@ -519,5 +512,13 @@ body {
 
   .user-voices-mobile {
     display: block;
+  }
+
+  .call-to-action {
+    display: none;
+  }
+
+  .call-to-action-mobile {
+    display: flex;
   }
 }
