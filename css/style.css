@@ -626,7 +626,7 @@
   padding: 1rem;
 }
 
-.contact-mobile input {
+.contact-mobile input[type="email"] {
   border: 1px solid #e3e3e3;
   appearance: input;
   border-radius: 0.5rem;
