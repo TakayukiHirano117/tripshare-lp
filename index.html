@@ -38,9 +38,9 @@
           <div class="nav-icon">
             <i class="fas fa-x fa-xl" onclick="toggleMenu()"></i>
           </div>
-          <div class="nav-menu-item"><a href="#functions">機能</a></div>
-          <div class="nav-menu-item"><a href="#reviews">利用者の声</a></div>
-          <div class="nav-menu-item"><a href="#inquiry">お問い合わせ</a></div>
+          <div class="nav-menu-item"><a href="#features">機能</a></div>
+          <div class="nav-menu-item"><a href="#voices">利用者の声</a></div>
+          <div class="nav-menu-item"><a href="#contact">お問い合わせ</a></div>
           <div class="start-to-record nav-menu-item">
             <a href="#start-to-record">旅の記録を開始する</a>
           </div>
@@ -127,7 +127,7 @@
       </div>
     </div>
     <!-- モバイルのHTMLとPCのHTMLを2種類作成 -->
-    <div class="feature-overview">
+    <div class="feature-overview" id="features">
       <div class="feature-overview-msgs">
         <h2 class="feature-overview-title">Features</h2>
         <p class="feature-overview-desc">
@@ -166,7 +166,7 @@
       </div>
     </div>
     <!-- モバイル用機能概要HTML -->
-    <div class="feature-overview-mobile">
+    <div class="feature-overview-mobile" id="features-mobile">
       <div class="feature-overview-msgs-mobile">
         <h2 class="feature-overview-title">Features</h2>
         <p class="feature-overview-desc">
@@ -204,85 +204,89 @@
         <img src="./public/feature_3.webp" alt="" />
       </div>
     </div>
-    <div class="user-voices">
-      <div class="user-voices-msgs">
-        <h2 class="user-voices-title">Voices</h2>
-        <p class="user-voices-desc">旅の感動を共有する仲間たちの声。</p>
-      </div>
+    <div class="user-voices" id="voices">
       <div class="user-voices-container">
-        <div class="user-voice-card">
-          <div class="user-voice-img">
-            <img src="./public/model_75.png" alt="" />
-          </div>
-          <div class="user-voice-info">
-            <p class="user-profile">32歳 会社員 Sさん</p>
-            <p class="user-voice">
-              このサービスで世界中の友達と繋がれました。写真のシェアがこんなに楽しいなんて！
-            </p>
-          </div>
+        <div class="user-voices-msgs">
+          <h2 class="user-voices-title">Voices</h2>
+          <p class="user-voices-desc">旅の感動を共有する仲間たちの声。</p>
         </div>
-        <div class="user-voice-card">
-          <div class="user-voice-img">
-            <img src="./public/model_14.png" alt="" />
+        <div class="user-voice-card-container">
+          <div class="user-voice-card">
+            <div class="user-voice-img">
+              <img src="./public/model_75.png" alt="" />
+            </div>
+            <div class="user-voice-info">
+              <p class="user-profile">32歳 会社員 Sさん</p>
+              <p class="user-voice">
+                このサービスで世界中の友達と繋がれました。写真のシェアがこんなに楽しいなんて！
+              </p>
+            </div>
           </div>
-          <div class="user-voice-info">
-            <p class="user-profile">28歳 自営業 Tさん</p>
-            <p class="user-voice">
-              旅の記録を簡単にアルバムにできて、家族にも大好評です。
-            </p>
+          <div class="user-voice-card">
+            <div class="user-voice-img">
+              <img src="./public/model_14.png" alt="" />
+            </div>
+            <div class="user-voice-info">
+              <p class="user-profile">28歳 自営業 Tさん</p>
+              <p class="user-voice">
+                旅の記録を簡単にアルバムにできて、家族にも大好評です。
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="user-voice-card">
-          <div class="user-voice-img">
-            <img src="./public/model_59.png" alt="" />
-          </div>
-          <div class="user-voice-info">
-            <p class="user-profile">22歳 学生 Sさん</p>
-            <p class="user-voice">
-              もっと早くこのサービスに出会えれば良かったと思います。これから旅行に行くのが楽しみです！
-            </p>
+          <div class="user-voice-card">
+            <div class="user-voice-img">
+              <img src="./public/model_59.png" alt="" />
+            </div>
+            <div class="user-voice-info">
+              <p class="user-profile">22歳 学生 Sさん</p>
+              <p class="user-voice">
+                もっと早くこのサービスに出会えれば良かったと思います。これから旅行に行くのが楽しみです！
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- モバイル用ユーザーボイス -->
-    <div class="user-voices-mobile">
-      <div class="user-voices-msgs">
-        <h2 class="user-voices-title">Voices</h2>
-        <p class="user-voices-desc">旅の感動を共有する仲間たちの声。</p>
-      </div>
+    <div class="user-voices-mobile" id="voices-mobile">
       <div class="user-voices-container-mobile">
-        <div class="user-voice-card-mobile">
-          <div class="user-voice-img-mobile">
-            <img src="./public/model_75.png" alt="" />
-          </div>
-          <div class="user-voice-info-mobile">
-            <p class="user-profile">32歳 会社員 Sさん</p>
-            <p class="user-voice">
-              このサービスで世界中の友達と繋がれました。写真のシェアがこんなに楽しいなんて！
-            </p>
-          </div>
+        <div class="user-voices-msgs">
+          <h2 class="user-voices-title">Voices</h2>
+          <p class="user-voices-desc">旅の感動を共有する仲間たちの声。</p>
         </div>
-        <div class="user-voice-card-mobile">
-          <div class="user-voice-img-mobile">
-            <img src="./public/model_14.png" alt="" />
+        <div class="user-voice-card-container-mobile">
+          <div class="user-voice-card-mobile">
+            <div class="user-voice-img-mobile">
+              <img src="./public/model_75.png" alt="" />
+            </div>
+            <div class="user-voice-info-mobile">
+              <p class="user-profile">32歳 会社員 Sさん</p>
+              <p class="user-voice">
+                このサービスで世界中の友達と繋がれました。写真のシェアがこんなに楽しいなんて！
+              </p>
+            </div>
           </div>
-          <div class="user-voice-info-mobile">
-            <p class="user-profile">28歳 自営業 Tさん</p>
-            <p class="user-voice">
-              旅の記録を簡単にアルバムにできて、家族にも大好評です。
-            </p>
+          <div class="user-voice-card-mobile">
+            <div class="user-voice-img-mobile">
+              <img src="./public/model_14.png" alt="" />
+            </div>
+            <div class="user-voice-info-mobile">
+              <p class="user-profile">28歳 自営業 Tさん</p>
+              <p class="user-voice">
+                旅の記録を簡単にアルバムにできて、家族にも大好評です。
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="user-voice-card-mobile">
-          <div class="user-voice-img-mobile">
-            <img src="./public/model_59.png" alt="" />
-          </div>
-          <div class="user-voice-info-mobile">
-            <p class="user-profile">22歳 学生 Sさん</p>
-            <p class="user-voice">
-              もっと早くこのサービスに出会えれば良かったと思います。これから旅行に行くのが楽しみです！
-            </p>
+          <div class="user-voice-card-mobile">
+            <div class="user-voice-img-mobile">
+              <img src="./public/model_59.png" alt="" />
+            </div>
+            <div class="user-voice-info-mobile">
+              <p class="user-profile">22歳 学生 Sさん</p>
+              <p class="user-voice">
+                もっと早くこのサービスに出会えれば良かったと思います。これから旅行に行くのが楽しみです！
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -300,7 +304,9 @@
     </div>
     <!-- コールトゥアクションモバイル用 -->
     <div class="call-to-action-mobile">
-      <h2 class="call-to-action-title-mobile">あなたの次の冒険をシェアしよう！</h2>
+      <h2 class="call-to-action-title-mobile">
+        あなたの次の冒険をシェアしよう！
+      </h2>
       <div class="call-to-action-msgs-mobile">
         <p>今すぐ登録して、旅の思い出を世界中の仲間と共有しましょう。</p>
         <p>新しい出会いと発見が待っています。</p>
@@ -308,6 +314,160 @@
       <div class="start-to-record">
         <a href="#start-to-record">旅の記録を開始する</a>
       </div>
+    </div>
+    <!-- コンタクト -->
+    <div class="contact" id="contact">
+      <div class="contact-msgs">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-desc">まずはお気軽にご相談ください。</p>
+      </div>
+      <form action="#" method="post" class="contact-form">
+        <fieldset class="contact-form-radio">
+          <label class="contact-form-radio-label" for="how-to-use">種別</label>
+          <div class="radio-btns">
+            <div>
+              <input type="radio" name="type" id="how-to-use" value="" required />
+              <label for="">アプリの使い方について</label>
+            </div>
+            <div>
+              <input type="radio" name="type" id="about-plans" value="" />
+              <label for="">プランについて</label>
+            </div>
+            <div>
+              <input type="radio" name="type" id="others" value="" />
+              <label for="">その他</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="contact-form-email">
+          <label for="email" class="contact-form-email-label">メールアドレス</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="contact-form-body">
+          <label for="body">お問い合わせ内容</label>
+          <textarea name="body" id="body"></textarea>
+        </div>
+        <button type="submit" class="contact-form-btn">お問い合わせ送信</button>
+      </form>
+    </div>
+    <!-- コンタクトモバイル用 -->
+    <div class="contact-mobile" id="contact-mobile">
+      <div class="contact-msgs">
+        <h2 class="contact-title">Contact</h2>
+        <p class="contact-desc">まずはお気軽にご相談ください。</p>
+      </div>
+      <form action="#" method="post" class="contact-form-mobile">
+        <fieldset class="contact-form-radio-mobile">
+          <label class="contact-form-radio-label">種別</label>
+          <div class="radio-btns-mobile">
+            <div>
+              <input type="radio" name="type" id="howToUse" value="" required />
+              <label for="">アプリの使い方について</label>
+            </div>
+            <div>
+              <input type="radio" name="type" id="howToUse" value="" />
+              <label for="">プランについて</label>
+            </div>
+            <div>
+              <input type="radio" name="type" id="howToUse" value="" />
+              <label for="">その他</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="contact-form-email">
+          <label for="" class="contact-form-email-label">メールアドレス</label>
+          <input type="email" name="email" id="" required />
+        </div>
+        <div class="contact-form-body">
+          <label for="">お問い合わせ内容</label>
+          <textarea name="" id=""></textarea>
+        </div>
+        <button type="submit" class="contact-form-btn">お問い合わせ送信</button>
+      </form>
+    </div>
+    <!-- フッター -->
+    <div class="footer">
+      <div class="footer-main">
+        <div class="footer-icons">
+          <div class="footer-logo-title">
+            <a href="">
+              <img src="./public/logo_icon.webp" alt="">
+            </a>
+            <p class="footer-title">Tripshare</p>
+          </div>
+          <div class="footer-sns-icons">
+            <a href=""><img src="./public/instagram.webp" alt=""></a>
+            <a href=""><img src="./public/twitter.webp" alt=""></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <a href="#features">
+            <p>機能</p>
+          </a>
+          <a href="#voices">
+            <p>利用者の声</p>
+          </a>
+          <a href="#contact">
+            <p>お問い合わせ</p>
+          </a>
+        </div>
+        <div class="footer-info">
+          <a href="">
+            <p>運営会社</p>
+          </a>
+          <a href="">
+            <p>利用規約</p>
+          </a>
+          <a href="">
+            <p>プライバシーポリシー</p>
+          </a>
+        </div>
+      </div>
+      <p class="copyright">
+        ©️Carriage Inc.
+      </p>
+    </div>
+    <!-- フッターモバイル用 -->
+     <div class="footer-mobile">
+      <div class="footer-main-mobile">
+        <div class="footer-icons-mobile">
+          <div class="footer-logo-title">
+            <a href="">
+              <img src="./public/logo_icon.webp" alt="">
+            </a>
+            <p class="footer-title">Tripshare</p>
+          </div>
+          <div class="footer-sns-icons">
+            <a href=""><img src="./public/instagram.webp" alt=""></a>
+            <a href=""><img src="./public/twitter.webp" alt=""></a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <a href="#features-mobile">
+            <p>機能</p>
+          </a>
+          <a href="#voices-mobile">
+            <p>利用者の声</p>
+          </a>
+          <a href="#contact-mobile">
+            <p>お問い合わせ</p>
+          </a>
+        </div>
+        <div class="footer-info">
+          <a href="">
+            <p>運営会社</p>
+          </a>
+          <a href="">
+            <p>利用規約</p>
+          </a>
+          <a href="">
+            <p>プライバシーポリシー</p>
+          </a>
+        </div>
+      </div>
+      <p class="copyright">
+        ©️Carriage Inc.
+      </p>
     </div>
   </body>
 </html>
